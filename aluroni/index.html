@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/reset.css">
+    <link rel="stylesheet" href="/assets/base.css">
+    <title>Aluroni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <button class="logo__botao">
+            <img src="/assets/img/logo.svg" alt="Logo da Aluroni">
+        </button>
+        <div>
+            <button type="button" class="botao__cabecalho"><img src="/assets/img/icone-sol.svg"
+                    alt="Botão para definir modo escuro, ou modo claro"></button>
+            <button type="button" class="botao__cabecalho"><img src="/assets/img/icone-malinha.svg"
+                    alt="Botão para conferir "></button>
+        </div>
+    </header>
+
+    <div class="banner">
+        <span class="banner__titulo">A Casa do Código e da massa</span>
+    </div>
+
+    <main class="principal__container">
+        <h1 id="cardapio__titulo">Cardápio</h1>
+        <form action=".">
+            <input class="campo__pesquisa" type="search" placeholder="Buscar" id="busca">
+        </form>
+        <nav id="menu__cardapio">
+            <ul>
+                <li><a href="#">Massas</a></li>
+                <li><a href="#">Carnes</a></li>
+                <li><a href="#">Combos</a></li>
+                <li><a href="#">Veganos</a></li>
+                <li><a href="#">
+                        <select name="filtro" id="filtro">
+                            <option value="filtro__opcoes">Ordenar por</option>
+                            <option value="padrao">Padrão</option>
+                            <option value="porcao">Porção</option>
+                            <option value="pessoas">Qtd. pessoas</option>
+                            <option value="preco">Preço</option>
+                            <option value="avaliacao">Avaliação</option>
+                        </select>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="container__menu__cardapio">
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/macarrao-mediterraneo.png"
+                    alt="Prato Macarrão Mediterrâneo">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Macarrão mediterrâneo</h2>
+                        <p class="cardapio__p">Macarrão spaghetti com frutos-do-mar e especíarias. Atenção: Contém
+                            camarão e
+                            outros
+                            frutos-do-mar!
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Massas
+                        </li>
+                        <li class="porcao">
+                            Porção: 400g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 2 pessoas
+                        </li>
+                        <li class="preco">
+                            R$73,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/macarrao-da-casa.png" alt="Prato Macarrão da casa">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Macarrão da casa</h2>
+                        <p class="cardapio__p">Macarrão fetuccine com carne de porco e verduras, molho fino com molho de
+                            tomate.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Massas
+                        </li>
+                        <li class="porcao">
+                            Porção: 300g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 1 pessoa
+                        </li>
+                        <li class="preco">
+                            R$54,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/macarrao-com-chilli.png" alt="Prato Macarrão com chilli">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Macarrão com chilli</h2>
+                        <p class="cardapio__p">Macarrão fetuccine com molho de chilli e especiárias.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Massas
+                        </li>
+                        <li class="porcao">
+                            Porção: 350g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 1 pessoa
+                        </li>
+                        <li class="preco">
+                            R$58,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/salada-da-casa-com-salmao.png"
+                    alt="Prato Salada da casa com salmão grelhado">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Salada da casa com salmão grelhado</h2>
+                        <p class="cardapio__p">Salada da casa (alface, rúcula, cenoura) com salmão.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Carnes
+                        </li>
+                        <li class="porcao">
+                            Porção: 450g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 1 pessoa
+                        </li>
+                        <li class="preco">
+                            R$42,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/bife-com-batatas.png" alt="Prato Bife com batatas">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Bife com batatas</h2>
+                        <p class="cardapio__p">Bife de boi (250g) na chapa, com batatas fritas. Acompanha arroz e
+                            molhos.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Carnes
+                        </li>
+                        <li class="porcao">
+                            Porção: 550g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 2 pessoas
+                        </li>
+                        <li class="preco">
+                            R$86,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/picanha-picada-com-legumes.png"
+                    alt="Prato Picanha picada com legumes e massa">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Picanha picada com legumes e massa</h2>
+                        <p class="cardapio__p">400g de picanha picada, com legumes grelhados e massa escolhida pelo
+                            cliente.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Combos
+                        </li>
+                        <li class="porcao">
+                            Porção: 850g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 3 pessoas
+                        </li>
+                        <li class="preco">
+                            R$123,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/lasagna-vegana.png"
+                    alt="Prato Lasagna vegana (carne de soja)">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Lasagna vegana (carne de soja)</h2>
+                        <p class="cardapio__p">Lasagna 100% vegana feita com carne de soja e massa especial.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Veganos
+                        </li>
+                        <li class="porcao">
+                            Porção: 350g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 1 pessoa
+                        </li>
+                        <li class="preco">
+                            R$45,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/salada-especial.png" alt="Prato Salada especial">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Salada especial</h2>
+                        <p class="cardapio__p">Salada com abacate, manga, alface, grão de bico e muito mais.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Veganos
+                        </li>
+                        <li class="porcao">
+                            Porção: 350g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 1 pessoa
+                        </li>
+                        <li class="preco">
+                            R$37,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container__menu__prato">
+                <img class="cardapio__imagem" src="/assets/img/almondegas.png" alt="Prato Almôndegas">
+                <div class="cardapio__texto">
+                    <div class="cardapio__">
+                        <h2 class="titulo__pratos">Almôndegas</h2>
+                        <p class="cardapio__p">Porção de almôndegas com sour cream, cebola e tempêros. Acompanha arroz
+                            ou massa.
+                        </p>
+                    </div>
+
+                    <ul class="cardapio__lista">
+                        <li class="tipo__de__prato">
+                            Combos
+                        </li>
+                        <li class="porcao">
+                            Porção: 740g
+                        </li>
+                        <li class="pessoas">
+                            Serve: 3 pessoas
+                        </li>
+                        <li class="preco">
+                            R$120,00
+                        </li>
+                        <li class="botao__cabecalho">
+                            <img src="/assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+
+        <button class="logo__botao logo__botao__rodape">
+            <img src="/assets/img/logo.svg" alt="Logo da Aluroni">
+        </button>
+
+    </footer>
+
+</body>
+
+</html>
