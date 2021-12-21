@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Italiana', serif;
+    min-width: auto;
 }
 
 .cabecalho {
@@ -33,6 +34,7 @@ body {
 .banner {
     display: flex;
     background-image: url(/assets/img/principal.png);
+    background-repeat: no-repeat;
     width: 100%;
     height: 256px;
     font-size: 42px;
@@ -47,6 +49,7 @@ body {
 
 .principal__container {
     padding: 10px 200px 0;
+    position: relative;
 }
 
 #cardapio__titulo {
@@ -67,16 +70,16 @@ body {
     background-position: right;
 }
 
-#menu__cardapio {
+.menu__cardapio {
     margin: 20px 0 40px;
 }
 
-#menu__cardapio ul li {
+.menu__cardapio ul li {
     display: inline;
     font-weight: bold;
 }
 
-#menu__cardapio ul li a  {
+.menu__cardapio ul li a  {
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -87,7 +90,7 @@ body {
     margin-right: 20px;
 }
 
-#menu__cardapio ul li #filtro {
+.menu__cardapio ul li #filtro {
     border: none;
     background-color: var(--cinza);
     cursor: pointer;
@@ -96,7 +99,7 @@ body {
     font-weight:bold;
 }
 
-#menu__cardapio ul li:last-child a {
+.menu__cardapio ul li:last-child a {
     float: right;
     margin-right: 0px;
 }
@@ -180,4 +183,72 @@ body {
     float: right;
     margin-right: 150px;
     padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    body { 
+        min-width: 768px;
+    }
+    
+    .cabecalho {
+        padding: 15px 100px 0;
+        margin-bottom: 5px;
+    }
+
+    .botao__cabecalho {
+        margin-left: 20px;
+    }
+
+    .banner__titulo {
+        padding-left: 100px;
+    }
+
+    .principal__container {
+        padding: 20px 20px 20px 15px;
+    }
+
+    #cardapio__titulo {
+        padding-left: 80px;
+        margin-top: 20px;
+    }
+
+    .campo__pesquisa {
+        margin-left: 80px;
+    }
+
+    .menu__cardapio {
+        margin: 40px 0 40px;
+    }
+
+    .menu__cardapio ul li a  {
+        margin-right: 0;
+        padding: 5px 20px;
+    }
+
+    .menu__cardapio ul li {
+        padding-right: 20px;
+    }
+
+    .menu__cardapio ul {
+        margin-right: 80px;
+    }
+
+    .cardapio__texto {
+        margin-right: 10px;
+    }
+
+    .rodape {
+        margin: 0;
+    }
+
+    .logo__botao__rodape {
+    margin-right: 75px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
 }
