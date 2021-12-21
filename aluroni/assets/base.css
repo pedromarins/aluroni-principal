@@ -205,6 +205,10 @@ body {
         padding-left: 100px;
     }
 
+    .banner {
+        background-position: center;
+    }
+
     .principal__container {
         padding: 20px 20px 20px 15px;
     }
