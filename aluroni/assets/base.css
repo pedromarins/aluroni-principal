@@ -33,7 +33,7 @@ body {
 
 .banner {
     display: flex;
-    background-image: url(/assets/img/principal.png);
+    background-image: url(./img/principal.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 256px;
@@ -65,7 +65,7 @@ body {
     font-size: 16px;
     background: var(--cinza);
     border-radius: 4px;
-    background-image: url(/assets/img/lupa.svg);
+    background-image: url(./img/lupa.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
