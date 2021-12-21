@@ -143,6 +143,7 @@ body {
 
 .container__menu__cardapio .container__menu__prato {
     display: flex;
+    width: 100%;
 }
 
 .container__menu__prato {
@@ -186,71 +187,27 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
 
-    body { 
-        min-width: 768px;
-    }
-    
     .cabecalho {
-        padding: 15px 100px 0;
-        margin-bottom: 5px;
-    }
-
-    .botao__cabecalho {
-        margin-left: 20px;
+        width: 90%;
     }
 
     .banner__titulo {
-        padding-left: 100px;
+        margin-left: 5%;
     }
-
-    .banner {
-        background-position: center;
-    }
-
+    
     .principal__container {
-        padding: 20px 20px 20px 15px;
+        width: 90%;
     }
 
-    #cardapio__titulo {
-        padding-left: 80px;
-        margin-top: 20px;
+    .cardapio__imagem {
+        height: 180px;
     }
 
-    .campo__pesquisa {
-        margin-left: 80px;
+    .menu__cardapio ul li a {
+        padding: 15px 25px;
     }
-
-    .menu__cardapio {
-        margin: 40px 0 40px;
-    }
-
-    .menu__cardapio ul li a  {
-        margin-right: 0;
-        padding: 5px 20px;
-    }
-
-    .menu__cardapio ul li {
-        padding-right: 20px;
-    }
-
-    .menu__cardapio ul {
-        margin-right: 80px;
-    }
-
-    .cardapio__texto {
-        margin-right: 10px;
-    }
-
-    .rodape {
-        margin: 0;
-    }
-
-    .logo__botao__rodape {
-    margin-right: 75px;
-    }
-
 }
 
 @media (max-width: 480px) {
