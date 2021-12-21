@@ -211,5 +211,34 @@ body {
 }
 
 @media (max-width: 480px) {
+    .campo__pesquisa {
+        width: 100%;
+        margin: 2em 0;
+    }
 
+    .menu__cardapio {
+        display: none;
+    }
+
+    .container__menu__cardapio .container__menu__prato {
+        display: initial;
+    }
+
+    .cardapio__imagem {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .cardapio__texto {
+        margin: 0.5em 0 2em;
+    }
+
+    .cardapio__lista {
+        font-size: 14px;
+    }
+
+    .tipo__de__prato {
+        display: none;
+    }
 }
