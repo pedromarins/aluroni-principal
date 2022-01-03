@@ -3,6 +3,8 @@
 body {
     font-family: 'Italiana', serif;
     min-width: auto;
+    background-color: var(--fundo);
+    transition: 0.5s;
 }
 
 .cabecalho {
@@ -22,26 +24,36 @@ body {
     border-radius: 4px;
 }
 
+.menu-nao-responsivo ul {
+    display: flex;
+    align-items: center;
+}
+
 .botao__cabecalho {
     border: none;
     padding: 10px;
     border-radius: 4px;
     margin-left: 10px;
     cursor: pointer;
-    background-color: var(--cinza);
+    background-color: var(--cinza-icones);
+}
+
+.menu-lateral, .botao-menu-hamburguer, #chekk {
+    display: none;
 }
 
 .banner {
     display: flex;
-    background-image: url(./img/principal.png);
+    background-image: var(--banner);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%;
     height: 256px;
     font-size: 42px;
-    color: #FAFAFA;
+    color: var(--branco);
     align-items: center;
+    transition: 0.5s;
 }
 
 .banner__titulo {
@@ -56,6 +68,7 @@ body {
 #cardapio__titulo {
     font-size: 36px;
     margin-top: 40px;
+    color: var(--cortexto);
 }
 
 .campo__pesquisa {
@@ -108,19 +121,32 @@ body {
 .titulo__pratos {
     font-size: 26px;
     margin-bottom: 10px;
+    color: var(--cortexto);
+    transition: 0.5s;
 }
 
 .cardapio__p {
     font-family: 'Josefin Sans', sans-serif;
-    color: #242536
+    color: var(--cortexto);
+    transition: 0.5s;
 }
 
 .cardapio__lista {
     font-family: 'Josefin Sans', sans-serif;
+    align-items: center
 }
 
-.cardapio__lista {
-    align-items: center
+.porcao, .pessoas {
+    color: var(--cortexto);
+    padding-left: 5px;
+    transition: 0.5s;
+}
+
+.botao__like {
+    background-color: var(--cinza-icones);
+    border-radius: 4px;
+    padding: 10px 10px 5px 10px;
+    margin-left: 10px;
 }
 
 .cardapio__lista .massas {
@@ -168,8 +194,6 @@ body {
 .cardapio__lista {
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .rodape {
@@ -186,59 +210,114 @@ body {
     margin-right: 20%;
 }
 
-
 @media (max-width: 810px) {
-
     .cabecalho {
         width: 90%;
+}
+
+    .botao-menu-hamburguer {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: var(--cinza-icones);
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 4px auto;
+        right: 35%;
+        cursor: pointer;
+        border-radius: 4px;
+}
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--fundo);
+        width: 40vw;
+        height: 100vh;
+
+        position: fixed;
+        right: -350px;
+        transition: .25s; 
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    .menu-lateral--ativo {
+        right: 0;
+        transition: .25s;
+    }
+
+    .menu-lateral__link {
+        height: 45px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid var(--cinza);
+        text-decoration: none;
+        color: var(--cortexto);
+    }
+    
+    .img-icone {
+        padding: 8px;
+        margin-right: 8px;
+        background-color: var(--cinza-icones);
+        border-radius: 4px;
+    }
+
+    .menu-lateral-fechar {
+        position: relative;
+        align-self: flex-end;
+        border-bottom: none;
+        margin-right: 20px;
+    }
+
+    .menu-nao-responsivo ul li:first-child {
+        display: none;
     }
 
     .banner__titulo {
         margin-left: 5%;
-    }
+}
     
     .principal__container {
         width: 90%;
-    }
+}
 
     .cardapio__imagem {
         height: 180px;
-    }
+}
 
-    .menu__cardapio ul li a {
-        padding: 15px 25px;
-    }
 }
 
 @media (max-width: 480px) {
-    .campo__pesquisa {
-        width: 100%;
-        margin: 2em 0;
-    }
 
-    .menu__cardapio {
-        display: none;
-    }
+        .campo__pesquisa {
+            width: 100%;
+            margin: 2em 0;
+        }
 
-    .container__menu__cardapio .container__menu__prato {
-        display: initial;
-    }
+        .menu__cardapio {
+            display: none;
+        }
 
-    .cardapio__imagem {
-        height: auto;
-        width: 100%;
-        margin: 0;
-    }
+        .container__menu__cardapio .container__menu__prato {
+            display: initial;
+        }
 
-    .cardapio__texto {
-        margin: 0.5em 0 2em;
-    }
+        .cardapio__imagem {
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
 
-    .cardapio__lista {
-        font-size: 14px;
-    }
+        .cardapio__texto {
+            margin: 0.5em 0 2em;
+        }
 
-    .tipo__de__prato {
-        display: none;
-    }
+        .cardapio__lista {
+            font-size: 14px;
+        }
+
+        .tipo__de__prato {
+            display: none;
+        }
 }

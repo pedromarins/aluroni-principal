@@ -1,5 +1,17 @@
 :root {
+    --branco: #FAFAFA;
     --cinza: #F5F5F5;
     --coral: #D73B3B;
+    --cinza-icones: #EBEBEB;
+
+    --cortexto: #292B43;
+    --fundo: #FFFFFF;
+    --banner: url(./img/macarrao-mediterraneo.png);
+}
+
+.dark {
+    --cortexto: #FFFFFF;
+    --fundo: #343953;
+    --banner: url(./img/principal.png);
 }
 

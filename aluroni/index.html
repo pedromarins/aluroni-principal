@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/base.css">
+    <link rel="shortcut icon" href="./assets/img/icone-favicon.png" type="image/png">
     <title>Aluroni</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +18,45 @@
 <body>
 
     <header class="cabecalho">
-        <button class="logo__botao">
+
+        <div class="logo__botao">
             <img src="./assets/img/logo.svg" alt="Logo da Aluroni">
-        </button>
-        <div>
-            <button type="button" class="botao__cabecalho"><img src="./assets/img/icone-sol.svg"
-                    alt="Botão para definir modo escuro, ou modo claro"></button>
-            <button type="button" class="botao__cabecalho"><img src="./assets/img/icone-malinha.svg"
-                    alt="Botão para conferir "></button>
         </div>
+
+        <!-- menu nao responsivo -->
+        <nav class="menu-nao-responsivo">
+            <ul>
+                <li class="botao__cabecalho botao-malinha"><img src="./assets/img/icone-malinha.svg"
+                        alt="Botão para conferir"></li>
+                <li class="botao__cabecalho botao">Modo Claro</li>
+                <input type="checkbox" class="check" id="chekk" aria-label="Menu">
+                <label for="chekk" class="botao-menu-hamburguer"><img src="./assets/img/menu.svg" alt="">MENU</label>
+            </ul>
+        </nav>
+        <!-- menu responsivo -->
+
     </header>
+
+    <nav class="menu-lateral">
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo menu-lateral-fechar">
+            <img src="./assets/img/icone-x.svg" alt="Fechar menu lateral"></a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-pedidos.svg"
+                class="img-icone" alt="Meus pedidos"> Meus pedidos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-entrega.svg"
+                class="img-icone" alt="Minhas entregas"> Entregas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-filiais.svg"
+                class="img-icone" alt="Filiais"> Filiais</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-promocoes.svg"
+                class="img-icone" alt="Promoções"> Promoções</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-receitas.svg"
+                class="img-icone" alt="Receitas"> Receitas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-sobre.svg"
+                class="img-icone" alt="Sobre"> Sobre</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img class="img-icone"
+                src="./assets/img/icone-trabalheconosco.svg" alt="Trabalhe conosco"> Trabalhe conosco</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--ativo"><img src="./assets/img/icone-contato.svg"
+                class="img-icone" alt="Contato"> Contato</a>
+    </nav>
 
     <div class="banner">
         <span class="banner__titulo">A Casa do Código e da massa</span>
@@ -84,7 +114,7 @@
                         <li class="preco">
                             R$73,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -114,7 +144,7 @@
                         <li class="preco">
                             R$54,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -122,7 +152,8 @@
             </div>
 
             <div class="container__menu__prato">
-                <img class="cardapio__imagem" src="./assets/img/macarrao-com-chilli.png" alt="Prato Macarrão com chilli">
+                <img class="cardapio__imagem" src="./assets/img/macarrao-com-chilli.png"
+                    alt="Prato Macarrão com chilli">
                 <div class="cardapio__texto">
                     <div class="cardapio__">
                         <h2 class="titulo__pratos">Macarrão com chilli</h2>
@@ -143,7 +174,7 @@
                         <li class="preco">
                             R$58,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -173,7 +204,7 @@
                         <li class="preco">
                             R$42,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -203,7 +234,7 @@
                         <li class="preco">
                             R$86,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -234,7 +265,7 @@
                         <li class="preco">
                             R$123,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -264,7 +295,7 @@
                         <li class="preco">
                             R$45,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -293,7 +324,7 @@
                         <li class="preco">
                             R$37,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -323,7 +354,7 @@
                         <li class="preco">
                             R$120,00
                         </li>
-                        <li class="botao__cabecalho">
+                        <li class="botao__like">
                             <img src="./assets/img/coracao.svg" alt="Ícone para escolher prato favorito">
                         </li>
                     </ul>
@@ -340,6 +371,8 @@
         </button>
 
     </footer>
+
+    <script src="./index.js"></script>
 
 </body>
 
