@@ -6,12 +6,12 @@
 
     --cortexto: #292B43;
     --fundo: #FFFFFF;
-    --banner: url(./img/macarrao-mediterraneo.png);
+    --banner: url(./img/principal.png);
 }
 
 .dark {
     --cortexto: #FFFFFF;
     --fundo: #343953;
-    --banner: url(./img/principal.png);
+    --banner: url(./img/principal-modo-escuro.jpg);
 }
 
