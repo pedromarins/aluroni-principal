@@ -43,6 +43,10 @@ body {
     display: none;
 }
 
+#chekk:checked + .menu-lateral {
+    right: 0;
+}
+
 .banner {
     display: flex;
     background-image: var(--banner);
@@ -234,8 +238,9 @@ body {
         display: flex;
         flex-direction: column;
         background-color: var(--fundo);
-        width: 40vw;
+        width: 80vw;
         height: 100vh;
+        top: 110px;
 
         position: fixed;
         right: -350px;
